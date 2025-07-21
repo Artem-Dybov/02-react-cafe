@@ -29,10 +29,10 @@ export default function App() {
     });
   };
 
-  // Обчислення загальної кількості голосів
+  
   const totalVotes = votes.good + votes.neutral + votes.bad;
 
-  // Обчислення відсотка позитивних голосів
+ 
   const positiveRate = totalVotes
     ? Math.round((votes.good / totalVotes) * 100)
     : 0;
