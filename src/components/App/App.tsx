@@ -1,5 +1,5 @@
 import css from "./App.module.css";
-import Cafeinfo from "../CafeInfo/CafeInfo";
+import CafeInfo from "../CafeInfo/CafeInfo";
 import { useState } from "react";
 import type { VoteType, Votes } from "./../../types/votes";
 import VoteOptions from "../VoteOptions/VoteOptions";
@@ -39,7 +39,7 @@ export default function App() {
 
   return (
     <div className={css.app}>
-      <Cafeinfo />
+      <CafeInfo />
       <VoteOptions
         onVote={handleVote}
         onReset={resetVotes}
